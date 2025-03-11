@@ -35,7 +35,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-foreground">
+    <div className="min-h-screen bg-pastel-gray/30 text-foreground">
       <Navbar />
       <main>
         <Hero />
