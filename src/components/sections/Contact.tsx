@@ -83,7 +83,7 @@ const Contact = () => {
                   <Input
                     id="name"
                     ref={nameRef}
-                    placeholder="John Doe"
+                    placeholder="Nitya Boyapati"
                     className="bg-white/50 border-white/20 focus:border-pastel-blue/50"
                     required
                   />
@@ -97,7 +97,7 @@ const Contact = () => {
                     id="email"
                     ref={emailRef}
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="nityaboyapati06@gamil.com"
                     className="bg-white/50 border-white/20 focus:border-pastel-blue/50"
                     required
                   />
@@ -135,7 +135,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-sm font-medium text-muted-foreground mb-1">Email</h4>
                     <a href="mailto:your.email@example.com" className="text-lg hover:text-primary transition-colors">
-                      your.email@example.com
+                      nityaboyapati06@gmail.com
                     </a>
                   </div>
                 </div>
@@ -158,7 +158,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-sm font-medium text-muted-foreground mb-1">Location</h4>
-                    <p className="text-lg">Your City, Country</p>
+                    <p className="text-lg">Hyderabad, India</p>
                   </div>
                 </div>
                 
