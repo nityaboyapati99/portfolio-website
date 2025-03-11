@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import InterestCard from "../ui/InterestCard";
 import { Camera, Code, Film, Music, Book, Plane } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -46,6 +46,7 @@ const interests = [
 const Interests = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isAutoScrollPaused, setIsAutoScrollPaused] = useState(false);
 
   const nextCard = () => {
     if (isAnimating) return;
@@ -61,8 +62,27 @@ const Interests = () => {
     setTimeout(() => setIsAnimating(false), 500);
   };
 
+  useEffect(() => {
+    let intervalId: number;
+    
+    if (!isAutoScrollPaused) {
+      intervalId = setInterval(() => {
+        nextCard();
+      }, 3000);
+    }
+
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+    };
+  }, [isAutoScrollPaused]);
+
   return (
-    <section id="interests" className="py-24 bg-gradient-to-br from-pastel-purple/20 via-white to-pastel-blue/20">
+    <section 
+      id="interests" 
+      className="py-24 bg-gradient-to-br from-pastel-purple/20 via-white to-pastel-blue/20"
+      onMouseEnter={() => setIsAutoScrollPaused(true)}
+      onMouseLeave={() => setIsAutoScrollPaused(false)}
+    >
       <div className="section-container">
         <div className="text-center mb-16">
           <h2 className="section-title fade-in-view">Interests & Passions</h2>
