@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
@@ -70,7 +69,7 @@ const Hero = () => {
           ref={titleRef}
           className="font-serif text-5xl md:text-7xl lg:text-8xl font-semibold opacity-0 translate-y-8 transition-all duration-700 delay-300"
         >
-          Your Name
+          Nitya Boyapati
         </h1>
         
         <p

@@ -10,8 +10,8 @@ import Footer from "@/components/layout/Footer";
 
 const Index = () => {
   useEffect(() => {
-    // Set page title
-    document.title = "Portfolio | Your Name";
+    // PERSONAL DETAILS: Update the page title with Nitya Boyapati's name
+    document.title = "Portfolio | Nitya Boyapati";
     
     // Add intersection observer for animation
     const observerOptions = {
@@ -35,7 +35,8 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-pastel-gray/30 text-foreground">
+    // Updated background color to be less white and more interesting
+    <div className="min-h-screen bg-gradient-to-b from-pastel-gray/50 to-pastel-gray/20 text-foreground">
       <Navbar />
       <main>
         <Hero />

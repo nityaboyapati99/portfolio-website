@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from "react";
 import { Award, BookOpen, Code, Heart } from "lucide-react";
 
@@ -76,12 +75,11 @@ const About = () => {
           <div className="col-span-full lg:col-span-1 fade-in-view">
             <div className="glass-card rounded-3xl p-8 h-full">
               <div className="aspect-square w-full rounded-2xl overflow-hidden bg-pastel-purple/20 mb-6">
-                {/* Profile image placeholder */}
                 <div className="w-full h-full flex items-center justify-center text-3xl font-serif">
-                  YN
+                  NB
                 </div>
               </div>
-              <h3 className="text-2xl font-serif font-medium mb-3">Your Name</h3>
+              <h3 className="text-2xl font-serif font-medium mb-3">Nitya Boyapati</h3>
               <p className="text-muted-foreground mb-4">
                 Your profession or title
               </p>
