@@ -83,7 +83,7 @@ const Contact = () => {
                   <Input
                     id="name"
                     ref={nameRef}
-                    placeholder="Nitya Boyapati"
+                    placeholder="Your Name"
                     className="bg-white/50 border-white/20 focus:border-pastel-blue/50"
                     required
                   />
@@ -97,7 +97,7 @@ const Contact = () => {
                     id="email"
                     ref={emailRef}
                     type="email"
-                    placeholder="nityaboyapati06@gamil.com"
+                    placeholder="username@mail.com"
                     className="bg-white/50 border-white/20 focus:border-pastel-blue/50"
                     required
                   />
@@ -147,7 +147,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-sm font-medium text-muted-foreground mb-1">Phone</h4>
                     <a href="tel:+1234567890" className="text-lg hover:text-primary transition-colors">
-                      +1 (234) 567-890
+                      +91 912xxxxx67
                     </a>
                   </div>
                 </div>

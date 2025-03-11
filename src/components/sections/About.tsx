@@ -81,7 +81,7 @@ const About = () => {
               </div>
               <h3 className="text-2xl font-serif font-medium mb-3">Nitya Boyapati</h3>
               <p className="text-muted-foreground mb-4">
-                Your profession or title
+                Software Development Intern
               </p>
               <p className="text-sm leading-relaxed">
                 A brief introduction about yourself. Share your background, motivation, and what makes you unique in your field. This is your opportunity to make a personal connection with visitors.
