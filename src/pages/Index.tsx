@@ -35,8 +35,8 @@ const Index = () => {
   }, []);
 
   return (
-    // Updated background color to be less white and more interesting
-    <div className="min-h-screen bg-gradient-to-b from-pastel-gray/50 to-pastel-gray/20 text-foreground">
+    // Updated background color to a soft gradient with pastel purple tones
+    <div className="min-h-screen bg-gradient-to-b from-pastel-purple/20 to-pastel-blue/10 text-foreground">
       <Navbar />
       <main>
         <Hero />

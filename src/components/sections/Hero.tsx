@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
@@ -51,17 +52,17 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-black/30 mix-blend-multiply z-10"></div>
+        <div className="absolute inset-0 bg-black/20 mix-blend-multiply z-10"></div>
         <img 
           src="/placeholder.svg" 
           alt="Background" 
           className="w-full h-full object-cover"
           title="Replace with a wide landscape photo that represents you"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-pastel-blue/20 via-transparent to-transparent z-20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-pastel-purple/20 via-transparent to-transparent z-20" />
         <div className="absolute top-1/4 -left-24 w-96 h-96 rounded-full bg-pastel-pink/30 blur-3xl z-20 opacity-50" />
-        <div className="absolute top-1/3 -right-24 w-96 h-96 rounded-full bg-pastel-purple/20 blur-3xl z-20 opacity-50" />
-        <div className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-pastel-yellow/20 blur-3xl z-20 opacity-50" />
+        <div className="absolute top-1/3 -right-24 w-96 h-96 rounded-full bg-pastel-purple/30 blur-3xl z-20 opacity-60" />
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-pastel-blue/30 blur-3xl z-20 opacity-50" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 text-center relative z-30">
