@@ -51,30 +51,37 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-b from-pastel-blue/20 via-white to-white" />
-        <div className="absolute top-1/4 -left-24 w-96 h-96 rounded-full bg-pastel-pink/30 blur-3xl" />
-        <div className="absolute top-1/3 -right-24 w-96 h-96 rounded-full bg-pastel-purple/20 blur-3xl" />
-        <div className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-pastel-yellow/20 blur-3xl" />
+        <div className="absolute inset-0 bg-black/30 mix-blend-multiply z-10"></div>
+        <img 
+          src="/placeholder.svg" 
+          alt="Background" 
+          className="w-full h-full object-cover"
+          title="Replace with a wide landscape photo that represents you"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-pastel-blue/20 via-transparent to-transparent z-20" />
+        <div className="absolute top-1/4 -left-24 w-96 h-96 rounded-full bg-pastel-pink/30 blur-3xl z-20 opacity-50" />
+        <div className="absolute top-1/3 -right-24 w-96 h-96 rounded-full bg-pastel-purple/20 blur-3xl z-20 opacity-50" />
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-pastel-yellow/20 blur-3xl z-20 opacity-50" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="max-w-7xl mx-auto px-6 text-center relative z-30">
         <span
           ref={nameRef}
-          className="inline-block font-medium text-sm md:text-base uppercase tracking-widest px-4 py-1.5 rounded-full bg-pastel-blue/20 mb-8 opacity-0 translate-y-8 transition-all duration-700 delay-100"
+          className="inline-block font-medium text-sm md:text-base uppercase tracking-widest px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-sm mb-8 opacity-0 translate-y-8 transition-all duration-700 delay-100 text-white"
         >
           Welcome to my Portfolio
         </span>
         
         <h1
           ref={titleRef}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl font-semibold opacity-0 translate-y-8 transition-all duration-700 delay-300"
+          className="font-serif text-5xl md:text-7xl lg:text-8xl font-semibold opacity-0 translate-y-8 transition-all duration-700 delay-300 text-white drop-shadow-md"
         >
           Nitya Boyapati
         </h1>
         
         <p
           ref={subtitleRef}
-          className="mt-6 text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto opacity-0 translate-y-8 transition-all duration-700 delay-500"
+          className="mt-6 text-xl md:text-2xl text-white/90 max-w-2xl mx-auto opacity-0 translate-y-8 transition-all duration-700 delay-500 drop-shadow-md"
         >
           Showcasing my journey, achievements, and passion in a clean, minimalist design.
         </p>
@@ -85,7 +92,7 @@ const Hero = () => {
         >
           <button
             onClick={handleScrollDown}
-            className="flex flex-col items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
+            className="flex flex-col items-center text-sm text-white hover:text-white/80 transition-colors"
             aria-label="Scroll down"
           >
             <span className="mb-2">Scroll Down</span>

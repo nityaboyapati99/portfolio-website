@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import InterestCard from "../ui/InterestCard";
 import { Camera, Code, Film, Music, Book, Plane } from "lucide-react";
@@ -10,36 +11,48 @@ const interests = [
     title: "Programming",
     description: "Exploring new technologies and building applications.",
     color: "blue" as const,
+    // PERSONAL PHOTO 1: Add your programming-related photo here
+    imagePath: "/placeholder.svg", // Replace with your image path
   },
   {
     icon: Camera,
     title: "Photography",
     description: "Capturing moments and finding beauty in the ordinary.",
     color: "pink" as const,
+    // PERSONAL PHOTO 2: Add a photography-related photo here
+    imagePath: "/placeholder.svg", // Replace with your image path
   },
   {
     icon: Music,
     title: "Music",
     description: "Playing instruments and discovering new genres.",
     color: "purple" as const,
+    // PERSONAL PHOTO 3: Add a music-related photo here
+    imagePath: "/placeholder.svg", // Replace with your image path
   },
   {
     icon: Book,
     title: "Reading",
     description: "Expanding knowledge through books and articles.",
     color: "green" as const,
+    // PERSONAL PHOTO 4: Add a reading-related photo here
+    imagePath: "/placeholder.svg", // Replace with your image path
   },
   {
     icon: Plane,
     title: "Travel",
     description: "Exploring new cultures and experiencing different ways of life.",
     color: "yellow" as const,
+    // PERSONAL PHOTO 5: Add a travel-related photo here
+    imagePath: "/placeholder.svg", // Replace with your image path
   },
   {
     icon: Film,
     title: "Cinema",
     description: "Appreciating storytelling through film and visual arts.",
     color: "peach" as const,
+    // PERSONAL PHOTO 6: Add a film/cinema-related photo here
+    imagePath: "/placeholder.svg", // Replace with your image path
   },
 ];
 
@@ -63,7 +76,7 @@ const Interests = () => {
   };
 
   useEffect(() => {
-    let intervalId: number;
+    let intervalId: NodeJS.Timeout | null = null;
     
     if (!isAutoScrollPaused) {
       intervalId = setInterval(() => {
@@ -103,12 +116,20 @@ const Interests = () => {
                   className="w-full h-full flex-shrink-0 flex items-center justify-center p-8"
                 >
                   <div className="w-full max-w-xl mx-auto">
-                    <InterestCard
-                      icon={interest.icon}
-                      title={interest.title}
-                      description={interest.description}
-                      color={interest.color}
-                    />
+                    <div className="p-6 rounded-2xl transition-all duration-300 group bg-white/80 shadow-md">
+                      {/* PERSONAL PHOTO: Add your hobby/interest photo here */}
+                      <div className="aspect-video w-full rounded-xl overflow-hidden mb-5 bg-pastel-purple/10">
+                        <img 
+                          src={interest.imagePath}
+                          alt={interest.title}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          title={`Replace with your ${interest.title.toLowerCase()} photo`}
+                        />
+                      </div>
+                      
+                      <h3 className="text-xl font-medium mb-2">{interest.title}</h3>
+                      <p className="text-muted-foreground text-sm">{interest.description}</p>
+                    </div>
                   </div>
                 </div>
               ))}

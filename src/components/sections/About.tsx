@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from "react";
 import { Award, BookOpen, Code, Heart } from "lucide-react";
 
@@ -74,8 +75,17 @@ const About = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <div className="col-span-full lg:col-span-1 fade-in-view">
             <div className="glass-card rounded-3xl p-8 h-full">
+              {/* PERSONAL PHOTO: Replace this div with your profile photo */}
               <div className="aspect-square w-full rounded-2xl overflow-hidden bg-pastel-purple/20 mb-6">
-                <div className="w-full h-full flex items-center justify-center text-3xl font-serif">
+                {/* ADD YOUR PHOTO HERE */}
+                <img 
+                  src="/placeholder.svg" 
+                  alt="Nitya Boyapati" 
+                  className="w-full h-full object-cover"
+                  title="Replace with your profile photo" 
+                />
+                {/* If you don't have a photo yet, this placeholder will show */}
+                <div className="w-full h-full flex items-center justify-center text-3xl font-serif absolute top-0 left-0">
                   NB
                 </div>
               </div>
