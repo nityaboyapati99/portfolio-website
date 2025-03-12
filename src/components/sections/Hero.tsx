@@ -59,10 +59,10 @@ const Hero = () => {
           className="w-full h-full object-cover"
           title="Replace with a wide landscape photo that represents you"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-pastel-purple/20 via-transparent to-transparent z-20" />
-        <div className="absolute top-1/4 -left-24 w-96 h-96 rounded-full bg-pastel-pink/30 blur-3xl z-20 opacity-50" />
-        <div className="absolute top-1/3 -right-24 w-96 h-96 rounded-full bg-pastel-purple/30 blur-3xl z-20 opacity-60" />
-        <div className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-pastel-blue/30 blur-3xl z-20 opacity-50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-indigo-600/20 via-transparent to-transparent z-20" />
+        <div className="absolute top-1/4 -left-24 w-96 h-96 rounded-full bg-pink-500/30 blur-3xl z-20 opacity-50" />
+        <div className="absolute top-1/3 -right-24 w-96 h-96 rounded-full bg-indigo-600/30 blur-3xl z-20 opacity-60" />
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 rounded-full bg-blue-500/30 blur-3xl z-20 opacity-50" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 text-center relative z-30">
